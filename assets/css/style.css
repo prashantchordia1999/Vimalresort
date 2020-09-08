@@ -1709,8 +1709,7 @@ By default (no class) the header is relative on top.
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #171720 !important;
-  background-color: rgba(23, 23, 32, 0.4) !important;
+  background-color: rgba(255, 255, 255, 1) !important;
 }
 .header.sticky_header {
   left: 0;
@@ -1889,12 +1888,12 @@ NAVIGATION AND TOOLS ON THE HEADER
 .header nav.primary_nav ul li a:link,
 .header nav.primary_nav ul li a:visited,
 .header nav.primary_nav ul li a:focus {
-  color: #ffffff;
+  color: #000000;
   background: none;
 }
 .header nav.primary_nav ul li a:hover,
 .header nav.primary_nav ul li a:active {
-  color: #ffffff;
+  color: #000000;
   background: none;
 }
 .header nav.primary_nav ul li.logo_in_nav a {
@@ -1903,11 +1902,11 @@ NAVIGATION AND TOOLS ON THE HEADER
 .header nav.primary_nav ul li.active a:link,
 .header nav.primary_nav ul li.active a:visited,
 .header nav.primary_nav ul li.active a:focus {
-  color: #ffffff;
+  color: #000000;
 }
 .header nav.primary_nav ul li.active a:hover,
 .header nav.primary_nav ul li.active a:active {
-  color: #ffffff;
+  color: #000000;
 }
 .header nav.primary_nav ul li.lihaschildren {
   position: relative;
@@ -2109,20 +2108,22 @@ a.menu-toggler {
   height: 0.9em;
   height: inherit;
   line-height: 0.9em;
-  color: #ffffff;
-  background-color: transparent;
+  color: #000000;
+  background-color: #ffffff;
   -webkit-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out;
   transition: all 600ms ease-in-out;
   -webkit-overflow-scrolling: touch;
 }
 a.menu-toggler:hover {
-  color: #ffffff;
+  color: #000000;
+  background: #ffffff;
 }
 a.menu-toggler:hover span.lines,
 a.menu-toggler:hover span.lines:before,
 a.menu-toggler:hover span.lines:after {
-  background: #ffffff;
+  background: #000000;
+  color: #fff;
 }
 a.menu-toggler.active {
   -o-transform: translate(100%, -50%);
@@ -2143,7 +2144,8 @@ a.menu-toggler span.lines:after {
   cursor: pointer;
   height: 1px;
   width: 20px;
-  background: #ffffff;
+  background: #000;
+  color: #fff;
   position: absolute;
   top: 22.95px;
   display: block;
@@ -2158,7 +2160,7 @@ a.menu-toggler span.lines:after {
   right: 0px;
 }
 a.menu-toggler.active span.lines {
-  background-color: transparent;
+  background-color: #fff;
 }
 a.menu-toggler.active span.lines:before,
 a.menu-toggler.active span.lines:after {
@@ -7680,11 +7682,11 @@ footer {
 }
 footer a:link,
 footer a:visited {
-  color: #6fb586;
+  color: #000;
 }
 footer a:hover,
 footer a:active {
-  color: #80be94;
+  color: orange;
 }
 footer .widget_tags a {
   color: #fdfdfd !important;
@@ -7752,14 +7754,14 @@ footer .footer_content ul li a:hover {
   color: #fdfdfd;
 }
 footer .copyright_content {
-  background-color: #13131b;
+  background-color: #fff;
 }
 .copyright {
   position: relative;
   font-size: 12px;
-  opacity: .5;
+  opacity: 1;
   padding-top: 20px;
-  color: #fdfdfd;
+  color: #000;
 }
 .copyright p {
   vertical-align: bottom;
@@ -7776,13 +7778,13 @@ footer .copyright_content {
 }
 .widget_footer_menu a {
   font-size: 12px;
-  opacity: .5;
-  color: #fdfdfd !important;
+  opacity: .8;
+  color: #000 !important;
   margin-left: 15px;
 }
 .widget_footer_menu a:hover {
   opacity: 1;
-  color: #80be94 !important;
+  color: #000 !important;
 }
 @media (max-width: 991px) {
   .widget_footer_menu {
